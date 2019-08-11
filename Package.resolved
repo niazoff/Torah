@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "VerseIndex",
+        "repositoryURL": "https://github.com/niazoff/VerseIndex.git",
+        "state": {
+          "branch": "master",
+          "revision": "a12dd2c95253f330c46c6004cefce2a3861691ec",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
