@@ -63,3 +63,23 @@ public enum ParshahIdentifier {
   case haazinu
   case vezotHaberachah
 }
+
+extension ParshahIdentifier {
+  var bookIdentifier: BookIdentifier {
+    switch self {
+    case .bereshit, .noach, .lechLecha, .vayera, .chayeiSarah,
+         .toldot, .vayetze, .vayishlach, .vayeshev, .miketz,
+         .vayigash, .vayechi: return .genesis
+    case .shemot, .vaera, .bo, .beshalach, .yitro,
+         .mishpatim, .terumah, .tetzaveh, .kiTisa, .vayakhel,
+         .pekudei: return .exodus
+    case .vayikra, .tzav, .shemini, .tazria, .metzora,
+         .achareiMot, .kedoshim, .emor, .behar, .bechukotai: return .leviticus
+    case .bamidbar, .naso, .behaalotecha, .shelachLecha, .korach,
+         .chukat, .balak, .pinchas, .matot, .masei: return .numbers
+    case .devarim, .vaetchanan, .ekev, .reeh, .shoftim,
+         .kiTetze, .kiTavo, .nitzavim, .vayelech, .haazinu,
+         .vezotHaberachah: return .deuteronomy
+    }
+  }
+}

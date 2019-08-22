@@ -1,12 +1,12 @@
 import VerseIndex
 
 public enum BookFactory {
-  public static func makeBook(for identifier: BookIdentifier) -> Book {
-    Book(identifier: identifier, verseIndices: verseIndices(for: identifier))
+  public static func makeBook(for book: BookIdentifier) -> Book {
+    Book(identifier: book, verseIndices: verseIndices(for: book))
   }
   
-  private static func verseIndices(for identifier: BookIdentifier) -> VerseIndexCollection {
-    switch identifier {
+  private static func verseIndices(for book: BookIdentifier) -> VerseIndexCollection {
+    switch book {
     case .genesis: return [
       1:  1...31, 2:  1...25, 3:  1...24,
       4:  1...26, 5:  1...32, 6:  1...22,
