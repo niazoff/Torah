@@ -4,7 +4,7 @@ public enum ParshahIdentifier {
   case noach
   case lechLecha
   case vayera
-  case chayeSarah
+  case chayeiSarah
   case toldot
   case vayetze
   case vayishlach
