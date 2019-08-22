@@ -25,6 +25,7 @@ public enum ParshahIdentifier {
   case kiTisa
   case vayakhel
   case pekudei
+  case vayakhelPekudei
   
   // MARK: - Leviticus
   case vayikra
@@ -32,11 +33,14 @@ public enum ParshahIdentifier {
   case shemini
   case tazria
   case metzora
+  case tazriaMetzora
   case achareiMot
   case kedoshim
+  case achareiMotKedoshim
   case emor
   case behar
   case bechukotai
+  case beharBechukotai
   
   // MARK: - Numbers
   case bamidbar
@@ -46,9 +50,11 @@ public enum ParshahIdentifier {
   case korach
   case chukat
   case balak
+  case chukatBalak
   case pinchas
   case matot
   case masei
+  case matotMasei
   
   // MARK: - Deuteronomy
   case devarim
@@ -60,6 +66,7 @@ public enum ParshahIdentifier {
   case kiTavo
   case nitzavim
   case vayelech
+  case nitzavimVayelech
   case haazinu
   case vezotHaberachah
 }
@@ -72,14 +79,16 @@ extension ParshahIdentifier {
          .vayigash, .vayechi: return .genesis
     case .shemot, .vaera, .bo, .beshalach, .yitro,
          .mishpatim, .terumah, .tetzaveh, .kiTisa, .vayakhel,
-         .pekudei: return .exodus
+         .pekudei, .vayakhelPekudei: return .exodus
     case .vayikra, .tzav, .shemini, .tazria, .metzora,
-         .achareiMot, .kedoshim, .emor, .behar, .bechukotai: return .leviticus
+         .tazriaMetzora, .achareiMot, .kedoshim, .achareiMotKedoshim, .emor,
+         .behar, .bechukotai, .beharBechukotai: return .leviticus
     case .bamidbar, .naso, .behaalotecha, .shelachLecha, .korach,
-         .chukat, .balak, .pinchas, .matot, .masei: return .numbers
+         .chukat, .balak, .chukatBalak, .pinchas, .matot,
+         .masei, .matotMasei: return .numbers
     case .devarim, .vaetchanan, .ekev, .reeh, .shoftim,
-         .kiTetze, .kiTavo, .nitzavim, .vayelech, .haazinu,
-         .vezotHaberachah: return .deuteronomy
+         .kiTetze, .kiTavo, .nitzavim, .vayelech, .nitzavimVayelech,
+         .haazinu, .vezotHaberachah: return .deuteronomy
     }
   }
 }
