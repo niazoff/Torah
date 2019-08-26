@@ -6,5 +6,8 @@ public struct Book {
 }
 
 public extension Book {
-  var title: String { String(describing: identifier).uppercased() }
+  var title: String {
+    let string = String(describing: identifier)
+    return string.prefix(1).uppercased() + string.dropFirst()
+  }
 }

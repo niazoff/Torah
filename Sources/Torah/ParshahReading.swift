@@ -4,5 +4,8 @@ public struct ParshahReading: Reading {
 }
 
 public extension ParshahReading {
-  var title: String { String(describing: identifier).uppercased() }
+  var title: String {
+    let string = String(describing: identifier)
+    return string.prefix(1).uppercased() + string.dropFirst()
+  }
 }
