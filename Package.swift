@@ -10,12 +10,13 @@ let package = Package(
       targets: ["Torah"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/niazoff/VerseIndex.git", .branch("master"))
+    .package(url: "https://github.com/niazoff/SwiftExtensions.git", .branch("master")),
+    .package(url: "https://github.com/niazoff/VerseIndex.git", .branch("master")),
   ],
   targets: [
     .target(
       name: "Torah",
-      dependencies: ["VerseIndex"]),
+      dependencies: ["SwiftExtensions", "VerseIndex"]),
     .testTarget(
       name: "TorahTests",
       dependencies: ["Torah"]),

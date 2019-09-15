@@ -1,3 +1,4 @@
+import SwiftExtensions
 import VerseIndex
 
 public struct Book {
@@ -7,7 +8,8 @@ public struct Book {
 
 public extension Book {
   var title: String {
-    let string = String(describing: identifier)
-    return string.prefix(1).uppercased() + string.dropFirst()
+    String(describing: identifier)
+      .camelCaseToSpaceSeparated()
+      .firstLetterUppercased()
   }
 }

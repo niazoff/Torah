@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "SwiftExtensions",
+        "repositoryURL": "https://github.com/niazoff/SwiftExtensions.git",
+        "state": {
+          "branch": "master",
+          "revision": "975f97e9f42980d728b78d3ed6a9af7e8f8cff14",
+          "version": null
+        }
+      },
+      {
         "package": "VerseIndex",
         "repositoryURL": "https://github.com/niazoff/VerseIndex.git",
         "state": {
