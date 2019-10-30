@@ -1,4 +1,4 @@
-public enum ParshahIdentifier {
+public enum ParshahIdentifier: String, Codable {
   // MARK: - Genesis
   case bereshit
   case noach
