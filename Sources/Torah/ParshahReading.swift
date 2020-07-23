@@ -12,3 +12,9 @@ public extension ParshahReading {
       .firstLetterUppercased()
   }
 }
+
+extension ParshahReading: Equatable {
+  public static func == (lhs: ParshahReading, rhs: ParshahReading) -> Bool {
+    lhs.identifier == rhs.identifier
+  }
+}
