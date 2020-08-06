@@ -6,6 +6,10 @@ public struct Book {
   public let verseIndices: VerseIndexCollection
 }
 
+extension Book: Equatable {}
+extension Book: Hashable {}
+extension Book: Codable {}
+
 public extension Book {
   var title: String {
     String(describing: identifier)
