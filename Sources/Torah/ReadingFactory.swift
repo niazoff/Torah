@@ -102,7 +102,7 @@ public extension ReadingFactory {
       [19, 7]...[19, 19], [19, 20]...[20, 14], [20, 15]...[20, 23]
     ])
     case .mishpatim: return aliyahs(for: parshah, verseRanges: [
-      [21, 1]...[21, 19], [12, 20]...[22, 3], [22, 4]...[22, 26], [22, 27]...[23, 5],
+      [21, 1]...[21, 19], [21, 20]...[22, 3], [22, 4]...[22, 26], [22, 27]...[23, 5],
       [23, 6]...[23, 19], [23, 20]...[23, 25], [23, 26]...[24, 18]
     ])
     case .terumah: return aliyahs(for: parshah, verseRanges: [
