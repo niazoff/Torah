@@ -92,3 +92,11 @@ extension ParshahIdentifier {
     }
   }
 }
+
+public extension ParshahIdentifier {
+  var title: String {
+    String(describing: self)
+      .camelCaseToSpaceSeparated()
+      .firstLetterUppercased()
+  }
+}

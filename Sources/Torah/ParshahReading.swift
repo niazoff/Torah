@@ -6,11 +6,7 @@ public struct ParshahReading: Reading {
 }
 
 public extension ParshahReading {
-  var title: String {
-    String(describing: identifier)
-      .camelCaseToSpaceSeparated()
-      .firstLetterUppercased()
-  }
+  var title: String { identifier.title }
 }
 
 extension ParshahReading: Equatable {
