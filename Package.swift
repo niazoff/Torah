@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.9
 
 import PackageDescription
 
@@ -11,8 +11,8 @@ let package = Package(
       targets: ["Torah"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/niazoff/SwiftExtensions.git", .branch("master")),
-    .package(url: "https://github.com/niazoff/VerseIndex.git", .branch("master")),
+    .package(url: "https://github.com/niazoff/SwiftExtensions.git", branch: "master"),
+    .package(url: "https://github.com/niazoff/VerseIndex.git", branch: "master"),
   ],
   targets: [
     .target(
